@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="app.js" defer></script>
+    <title>Resistrarse</title>
+</head>
+<body>
+    <div class="imagenLogo">
+        <img src="https://images.unsplash.com/photo-1614179924047-e1ab49a0a0cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80" alt="Setup Gamer">
+        <p>Foto de <a href="https://unsplash.com/@op23?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">op23</a> en <a href="https://unsplash.com/es/fotos/mHm1ASYNC0I?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        </p>
+        <div class="logo">
+            <h1>Zona Gamer</h1>
+        </div>
+    </div>
+    <div class="contenedorFormulario">
+        <p>Registrese para disfrutar de nuestros servicios</p>
+        <form action="">
+            <div class="datos">
+                <fieldset>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <br>
+                        <input type="text" name="nombre" id="nombre"  pattern="[a-zA-Z]{1,15}" required>
+                    </div>
+                    <div>
+                        <label for="apellido">Apellido</label>
+                        <br>
+                        <input type="text" name="apellido" id="apellido" pattern="[a-zA-Z]{1,15}" >
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="correo">Correo Electronico</label>
+                        <br>
+                        <input type="email" name="correo" id="correo" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Telefono</label>
+                        <br>
+                        <input type="number" name="telefono" id="telefono" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        <label for="contrasena">Contraseña</label>
+                        <br>
+                        <input type="password" name="contrasena" id="contrasena" minlength="8" required>
+                    </div>
+                    <div>
+                        <label for="confirmar">Confirmar Contraseña</label>
+                        <br>
+                        <input type="password" name="confirmar" id="confirmar" minlength="8" required>
+                        <input type="button" value="mostrar">
+                    </div>
+                </fieldset>
+            </div>
+           <button type="submit" disabled>Crear Cuenta</button>
+        </form>
+        <p>Tienes cuenta <a href="#">Iniciar seccion</a></p>
+    </div>
+</body>
+</html>
